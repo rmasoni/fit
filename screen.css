@@ -1,0 +1,106 @@
+@import "reset.css";
+@import "fit.css";
+
+body {
+  color: #333;
+  font-family: Noto Sans, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+}
+
+#wrapper {
+  margin: 2em auto 10em;
+  width: 45em;
+}
+
+a {
+  color: #498;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  background-color: #afe;
+}
+
+time {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+code {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: .3em;
+  display: inline-block;
+  font-family: Ubuntu Mono, monospace;
+  line-height: normal;
+  padding: .1em .3em;
+}
+
+.gist {
+  font-size: .8em;
+}
+
+p,
+ul,
+h2,
+h3 {
+  margin-bottom: 1em;
+}
+
+p,
+ul {
+  line-height: 1.8em;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+h1 {
+  font-size: 10em;
+  text-align: center;
+}
+
+h2,
+h3 {
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+h2 {
+  border-top: 1px solid #eee;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+
+/* Upload Button */
+span.upload-button {
+  background-color: #9ed;
+  border: 1px solid #498;
+  border-radius: .5em;
+  box-shadow: inset 0 2px 0 #afe, inset 0 -2px 3px #7cb, 0 1px 5px rgba(0, 0, 0, .3);
+  color: #276;
+  display: inline-block;
+  padding: 1em 3em;
+  position: relative;
+  text-shadow: 0 2px 0 #afe;
+  transition: all 200ms ease-in
+}
+
+span.upload-button:hover,
+span.upload-button:focus {
+  background-color: #afe;
+  box-shadow: inset 0 2px 0 #fff, inset 0 -2px 3px #7cb, 0 1px 3px rgba(0, 0, 0, .4);
+  color: #387;
+  text-shadow: 0 2px 0 #fff;
+}
+
+span.upload-button:active {
+  background-color: #9ed;
+  box-shadow: inset 0 2px 3px #7cb, 0 0 10px rgba(0, 0, 0, .3);
+  color: #387;
+  text-shadow: 0 -2px 0 #afe;
+}

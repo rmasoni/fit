@@ -1,0 +1,23 @@
+/* Prevents the input[type=file] from leaking outside the button */
+.fit {
+  overflow: hidden;
+}
+
+/* Prevents block elements from breaking the buttons */
+.fit * {
+  display: inline;
+}
+
+/* Magic */
+.fit input[type=file] {
+  bottom: 0;
+  cursor: pointer;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200%;
+}

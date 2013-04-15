@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FIT (File Input Trick) by Rafael Masoni</title>
+  <meta name="decription" content="A simple CSS/Sass snippet that hides HTML file inputs for more flexible designs.">
+  <meta name="author" content="Rafael Masoni">
+  <link rel="stylesheet" href="screen.css">
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div id="wrapper">
+<header>
+  <h1><abbr>FIT</abbr></h1>
+</header>
+
+<section>
+<h2>What's this?</h2>
+<p><strong><abbr title="File Input Trick">FIT</abbr></strong> is a <abbr>CSS</abbr> trick based on <a href="https://github.com/blueimp/jQuery-File-Upload"><strong>blueimp</strong>'s jQuery File Upload</a> that lets you make almost any element trigger the browser's file upload dialog by hiding an <code>input[type=file]</code> inside of it.</p>
+<p>It's specially useful for designers that despise the browsers' default <code>input[type=file]</code> styles, which as of <time title="15-04-2013">today</time> cannot be changed.</p>
+
+<h2>How to use</h2>
+
+<p>Import <strong>fit.css</strong> into your <abbr>CSS</abbr> file, then wrap the <code>input[type=file]</code> — together with some text or an icon — in an element with the class <code>.fit</code>.</p>
+
+<p>Remember to set the container element to have:</p>
+<ul>
+  <li><code>position: relative;</code> or <code>position: absolute;</code>
+  <li><code>display: inline-block;</code> or <code>display: block;</code></li>
+</ul>
+</p>
+
+<h2>Example</h2>
+
+<h3><abbr>HTML</abbr></h3>
+
+<script src="https://gist.github.com/rmasoni/5386251.js"></script>
+
+<h3><abbr>CSS</abbr></h3>
+
+<script src="https://gist.github.com/rmasoni/5386260.js"></script>
+
+<h3>Result</h3>
+
+<span class="upload-button fit">
+  <input type="file">
+  Upload files
+</span>
+
+<h2>Browser Support</h2>
+
+<p>This trick has been tested and works properly on the latest <strong>Chrome</strong>, <strong>Safari</strong>, <strong>Mobile Safari</strong>, and <strong>Internet Explorer 9/10</strong>.</p>
+
+<p><strong>Firefox</strong> unfortunately sets a weird clickable area for the <code>input[type=file]</code> that can't be changed. This makes slightly large buttons only partially clickable, so I do not recommended you to use this trick if you need to support this browser.</p>
+</section>
+</div>
+
+</body>
+</html>
