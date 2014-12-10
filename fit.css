@@ -19,5 +19,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  width: 200%;
+  -webkit-transform: translate(-300px, 0px) scale(4);
+  -moz-transform: translate(-300px, 0px) scale(4);
+  -ms-transform: translate(-300px, 0px) scale(4);
 }
