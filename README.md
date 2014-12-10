@@ -30,18 +30,16 @@ Remember to set the container element to have:
 
 ``` css
 @import "fit.css";
- 
+
 span.upload-button {
   /* Mandatory rules */
   display: inline-block;
   position: relative;
- 
+
   /* Your rules */
 }
 ```
 
 ## Browser Support
 
-This trick has been tested and works properly on the latest **Chrome**, **Safari**, **Mobile Safari**, and **Internet Explorer 9/10**.
-
-**Firefox** unfortunately sets a weird clickable area for the `input[type=file]` that can't be changed. This makes slightly large buttons only partially clickable, so I do not recommended you to use this trick if you need to support this browser.
+This trick has been tested and works properly on the latest **Chrome**, **Safari**, **Firefox**, **Mobile Safari**, **Mobile Chrome**, and **Internet Explorer 9/10**.
